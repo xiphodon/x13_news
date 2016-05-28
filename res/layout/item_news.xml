@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/siv" 
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/siv"
+        android:textSize="23sp"
+        android:singleLine="true"
+        android:text="这是大标题"/>
+    
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:text="这是详细内容qwrrrtaswrwerwerwerwerwerw"
+        android:textColor="#999999"
+        android:textSize="15sp" 
+        android:layout_toRightOf="@id/siv"
+        android:lines="2"/>
+    
+    <TextView 
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail"
+        android:layout_alignParentRight="true"
+        android:text="13412条评论"
+        android:textColor="#ff0000"/>
+
+</RelativeLayout>
